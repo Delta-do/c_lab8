@@ -65,15 +65,67 @@ void t2()
 	
 }
 
+void t3()
+{
+	int n;
+	printf("Введите целое n: ");
+	scanf("%d", &n);
+
+	float sum = 0;
+	for (int i = 0; i <= n; i++)
+	{
+		sum += pow(-1, i) * (1. / pow(2, i));
+		//printf("%d %f %f %f\n", i, pow(-1, i), 1. / pow(2, i), pow(-1, i) * (1. / pow(2, i)));
+	}
+
+	printf("%f", sum);
+}
+
+int factorial(int n)
+{
+	int p = 1;
+	for (int i = 2; i <= n; i++)
+	{
+		p *= i;
+	}
+	return p;
+}
+
+float calc_sum(int x)
+{
+	int k = 0;
+	float sum = 0; 
+
+	for (int i = 1; i <= 13; i += 2)
+	{
+		sum += pow(-1, k) * (pow(x, i) / factorial(i));
+		//printf("%d %f %f %f\n", i, pow(-1, k), factorial(i), pow(-1, k) * (pow(x, i) / factorial(i)));
+		k++;
+	}
+	return sum;
+}
+
 int main()
 {
+	int x, k;
+	float sum = 0;
+
 	setlocale(LC_ALL, "RUS");
 
 	//t0();
 
 	//t1();
 
-	t2(); //5 вариант
+	//t2(); //5 вариант
+
+	//t3(); //16 вариант
+
+	//(3 задание, но 7 вариант)
+	
+	printf("Введите x: ");
+	scanf("%d", &x);
+	sum = calc_sum(x);
+	printf("%f", sum);
 
 	return 0;
 }

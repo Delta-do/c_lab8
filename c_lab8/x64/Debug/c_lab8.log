@@ -1,2 +1,5 @@
 ﻿  Source.c
-  c_lab8.vcxproj -> C:\Users\TEMP.1406-03\source\repos\c_lab8\x64\Debug\c_lab8.exe
+C:\Users\smole\source\repos\c_lab8\c_lab8\Source.c(77,21): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
+C:\Users\smole\source\repos\c_lab8\c_lab8\Source.c(101,21): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
+C:\Users\smole\source\repos\c_lab8\c_lab8\Source.c(110,9): warning C4101: k: неиспользованная локальная переменная
+  c_lab8.vcxproj -> C:\Users\smole\source\repos\c_lab8\x64\Debug\c_lab8.exe
